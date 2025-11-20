@@ -222,6 +222,46 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('nomeUsuario').textContent = `Olá, ${usuario.nome}`;
   }
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const calendarEl = document.getElementById('calendar');
+
+  const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    locale: 'pt-br',
+    height: 'auto',
+    events: [
+      {
+        title: 'Show na Audio',
+        start: '2025-08-09',
+        extendedProps: {
+          location: 'São Paulo'
+        }
+      },
+      {
+        title: 'Lollapalooza',
+        start: '2026-03-20',
+        extendedProps: {
+          location: 'São Paulo'
+        }
+      },
+      {
+        title: 'Festival BH',
+        start: '2025-12-15',
+        extendedProps: {
+          location: 'Belo Horizonte'
+        }
+      }
+    ],
+    eventClick: function (info) {
+      alert(`Evento: ${info.event.title}\nLocal: ${info.event.extendedProps.location}`);
+    }
+  });
+
+  calendar.render();
+});
+
+
+
 
 
 
