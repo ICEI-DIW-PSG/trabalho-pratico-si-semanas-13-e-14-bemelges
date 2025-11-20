@@ -16,8 +16,11 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+<< Nesta etapa foi feita uma implementação de um calendário, atraves do FullCalendar, ele irá possibilitar fãs do artista FBC, encontrarem os póximos shows de forma mais fácil e eficiente.>>
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+<< ![Funcionalidade GET do CRUD](public/images/postman_get.png) >>
+<< ![Funcionalidade POST do CRUD](public/images/postman_post.png) >>
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+<< ![implementação](public/images/implementaçãofullcalendar.png) >>
+
+<< ![implementação](public/images/implementaçãofullcalendar2.png) >>
