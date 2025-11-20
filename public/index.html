@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBC - Padrim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="login">
+            <nav>
+                <div class="login-box">
+                    <form>
+                        <input type="email" placeholder="E-mail" required />
+                        <input type="password" placeholder="Senha" required />
+                        <button type="submit">Entrar</button>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#modalCadastro">
+                            Cadastrar
+                        </button>
+                    </form>
+                </div>
+                <div class="usuario-logado" style="display: none;">
+                    <span id="nomeUsuario"></span>
+                    <button id="btnLogout" class="btn btn-danger btn-sm">Sair</button>
+                </div>
+            </nav>
+        </section>
+        <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bootstrap-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCadastroLabel">Cadastro de Usuário</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailCadastro" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailCadastro" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="senhaCadastro" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="senhaCadastro" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmarSenha" class="form-label">Confirmar Senha</label>
+                                <input type="password" class="form-control" id="confirmarSenha" required>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Pesquisar artista..." aria-label="Search" />
+                    <button class="search-button">
+                        <img src="images/lupa.png" alt="Buscar" />
+                    </button>
+
+                </form>
+            </div>
+        </nav>
+        <h1>FBC</h1>
+        <h2>Padrim</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Quem é FBC?</a></li>
+            <Li><a href="#disco">Álbuns</a></Li>
+        </ul>
+    </nav>
+    <section id="sobre" class="sobre">
+        <div class="Imagem"></div>
+        <img src="images/fbc.jpg" alt="Foto do FBC">
+        </div>
+        <div class="textosobre">
+            <h2>Como foi sua história?</h2>
+            <p> Fabricio Soares Teixeira, ou como mais conhecido "FBC", é um artista e
+                compositor brasileiro de Belo Horizonte que ganhou notoriedade através do rap.
+                Nascido no dia 06 de junho de 1989, no bairro de São Benedito, em Santa Luzia,
+                cidade metropolitana de Belo Horizonte, Fabrício Soares Teixeira iniciou na música
+                quando estava na sétima série, em 2004, onde se juntou com alguns amigos, em que
+                cantavam em quadrilhas, festivais de bairro e eventos sociais na cidade, e a partir
+                disso resolveu que sua briga seria por meio da arte.
+                A partir de sua inserção no Rap, ele passou pelo de mcs em Belo Horizonte, de 2007 até 2015,
+                cresceu e venceu batalhas, aprendeu a cultura do hip hop, indo além do comum que tocava em rádios.
+                Iniciou no grupo DV Tribo, que era composto por ele, Djonga, o produtor Coyote, Clara Lima, Hot e Oreia,
+                no ano que deixou as batalhas.
+                Portanto, por mais que o RAP sempre tenha estado presente em sua vida, FBC passou por diversas
+                profissões antes de
+                chegar aonde está. Foi faxineiro, flanelinha, varreu ruas da capital por um ano, na Nova Gameleira,
+                Prado e Nova Suíça
+                e foi servente de pedreiro em algumas obras. Foi camelô e vendedor de água e pipoca no sinal.
+            </p>
+            <h2>Origem</h2>
+            <p>Os pais de Fabrício vieram de Santa Maria do Suaçuí, ou como ele diz, um dos vários meios do
+                nada de Minas Gerais. Caçula de três filhos, quando tinha apenas nove anos, sua mãe, Maria de
+                Fátima Soares, saiu de casa, deixando-os sob os cuidados da avó e do pai. Ainda assim, ele
+                demonstra gratidão por tudo o que ela fez por ele e seus irmãos. O pai, José Teixeira, com a
+                necessidade de sustentar sozinho a família, trabalhava 16 horas por dia. Isso contribuiu para
+                que Fabrício fosse criado pelas ruas.Nos anos 90, que ele descreve como “os anos do crack”, viveu
+                em Santa Luzia, e conviveu com a violência o crescimento do uso de “entorpecentes pesados”, como a
+                cocaína, e afirmou se lembrar de tudo isso, inclusive de quando entrou para a venda de drogas
+                por necessidade financeira.
+                Quando completou 18 anos de idade decidiu que, depois de três anos vendendo droga, não queria
+                mais essa vida problemática. Tentou uma vaga de emprego em uma construção a meio metro de onde
+                morava, mas o seu envolvimento com o crime o impediu de ser contratado. Em meio a um sentimento
+                metamórfico, algo o convenceu de que aquela vida não era para ele, devolvendo todas as drogas
+                e armas que tinha. Pediu ajuda ao pai para sair da inércia que estava e a lembrança foi moldando
+                seu semblante e, alegremente, Fabrício contou que o pai abriu a carteira e o deu vinte reais.
+                Foi esse gesto que impulsionou o cantor a enfrentar as dificuldades de morar sozinho. Se mudou
+                de Santa Luzia para o Barreiro, em Belo Horizonte, e começou a trabalhar com seu tio descarregando
+                blocos.
+                E em seguida, conhece Michelle, sua atual esposa, que na época tinha 16 anos. A mesma acompanha
+                em toda sua trajetória pessoal e na carreira, tendo recebido várias homenagens nas canções do artista,
+                como na faixa Pra você e pra mim do álbum Best Duo. Os dois completam 15 anos de companheirismo e essa
+                relação gerou três filhos: Yasmin, Samuel e Charlotte.
+            </p>
+            <h2>Liricamente</h2>
+            <p>Apesar de ser originalmente um rapper, principalmente voltado ao boombap, Fabrício não se prendeu apenas
+                a um gênero.
+                Em que arrisca e se destaca em diversos outros gêneros e vertentes, como por exemplo seu álbum mais
+                famoso, "Baile",
+                se inspira no Miami Bass para reviver o Funk dos anos 90. Em "Padrim", ele se destaca no subênero do
+                Rap, chamado Trap.
+                Ademais, em "O amor, o perdão e a tecnologia irão nos levar para outro planeta", FBC passeia pelos anos
+                70,80 e 90 mesclando
+                uso de temas sintéticos do funk mesclado ao estilo de house music da época. Por fim, no seu último álbum
+                "Assaltos e Batidas",
+                ele retorna ao seu primórdio, fazendo um álbum completo no puro "boombap" (subgênero do Rap, que por sua
+                essência é o mais
+                simples e clássico dos sub-gêneros), que faz a nostalgia dos fãs do Fabrício enxergar o "antigo artista"
+                no seu "eu" atual.
+            </p>
+        </div>
+    </section>
+    <section id="disco" class="albuns">
+        <h2>Discografia</h2>
+        <script src="app.js"></script>
+        <script>
+            const container = document.querySelector(".albuns");
+
+            albuns.forEach(album => {
+                const link = document.createElement("a");
+                link.href = `detalhes.html?id=${album.id}`;
+                link.style.textDecoration = "none";
+                link.style.color = "inherit";
+
+                const card = document.createElement("span");
+                card.className = "album";
+
+                card.innerHTML = `
+      <img src="${album.imagem}" alt="Capa ${album.titulo}">
+      <h3 style="color:#00ac2b;">${album.titulo}</h3>
+    `;
+
+                link.appendChild(card);
+                container.appendChild(link);
+            });
+        </script>
+        <footer>
+            <span class="social">
+                <img src="images/insta.png" alt="Insta">
+                <a href="https://www.instagram.com/fbctadoido" target="_blank">Instagram</a> |
+                <a href="https://twitter.com/fbctadoido" target="_blank">X</a> |
+                <img src="images/Spotifyicon.png" alt="Spotify">
+                <a href="https://open.spotify.com/intl-pt/artist/29QKtXMaVczUBDiI3aPBWS?si=pTO-4ahlRbmnj0VOm57Ccw"
+                    target="_blank">Spotify</a>
+                </div>
+        </footer>
+</body>
+
+</html>

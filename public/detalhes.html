@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalhes do Álbum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Detalhes do Álbum</h1></header>
+<main id="detalhes"></main>
+
+<script src="app.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get("id"));
+  const album = albuns.find(a => a.id === id);
+
+  if (album) {
+    let html = `
+      <h2>${album.titulo} (${album.ano})</h2>
+      <img src="${album.imagem}" alt="Capa do álbum ${album.titulo}">
+      <p><strong>Estilo:</strong> ${album.estilo}</p>
+      <p><strong>Destaque:</strong> ${album.destaque}</p>
+      <p>${album.descricao}</p>
+    `;
+    if (album.faixas && album.faixas.length > 0) {
+      html += `<h3>Faixas:</h3><ul>`;
+      album.faixas.forEach(faixa => {
+        html += `<li>${faixa}</li>`;
+      });
+      html += `</ul>`;
+    }
+
+    html += `<a href="index.html">← Voltar</a>`;
+    document.getElementById("detalhes").innerHTML = html;
+  } else {
+    document.getElementById("detalhes").innerHTML = `<p>Álbum não encontrado.</p>`;
+  }
+</script>
+
+
+</body>
+</html>

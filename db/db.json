@@ -13,6 +13,48 @@
       "senha": "123",
       "nome": "Usuario Comum",
       "email": "user@abc.com"
+    },
+    {
+      "id": "2b2e6697-1d5c-4358-9d53-88ddea1753ee",
+      "login": "admin",
+      "senha": "123654",
+      "nome": "admin",
+      "email": "admin@gmail.com"
+    },
+    {
+      "id": "1d51e312-2fe5-4046-bde7-251999a0a480",
+      "login": "postman",
+      "senha": "p1",
+      "nome": "postman",
+      "email": "postman@gmail.com"
+    },
+    {
+      "id": "59ea025d-26b8-455b-8eb5-764740b37900",
+      "login": "postman",
+      "senha": "p1",
+      "nome": "postman",
+      "email": "postman@gmail.com"
+    },
+    {
+      "id": "27e3d74f-a2fb-4694-8841-15ddf48fac90",
+      "login": "postman",
+      "senha": "p1",
+      "nome": "postman",
+      "email": "postman@gmail.com"
+    },
+    {
+      "id": "abc123",
+      "login": "novoUsuario",
+      "senha": "123456",
+      "nome": "Novo Usuário",
+      "email": "novo@email.com"
+    },
+    {
+      "id": "0b6da962-fd13-4400-99b9-c7c01d5ced09",
+      "login": "dep",
+      "senha": "dep",
+      "nome": "dep",
+      "email": "dep@abc.com"
     }
   ]
 }
