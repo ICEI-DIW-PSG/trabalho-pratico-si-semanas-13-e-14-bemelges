@@ -1,8 +1,4 @@
-# Trabalho Prático 06 - Semanas 11 e 12
-
-Nessa etapa, você irá evoluir o projeto anterior e montando um ambiente de desenvolvimento mais completo, típico de projetos profissionais. Nesse processo, vamos utilizar um **servidor backend simulado** com o JSON Server que fornece uma APIs RESTful a partir de um arquivo JSON.
-
-Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o cadastro e alteração de dados da entidade principal (CRUD).
+# Trabalho Prático 07 - Semanas 13 e 14
 
 ## Informações do trabalho
 
